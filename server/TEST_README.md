@@ -133,17 +133,6 @@ node --inspect-brk node_modules/.bin/jest --runInBand
 npx jest --verbose --no-cache
 ```
 
-## Common Issues
-
-### Q: Test fails with "Missing required environment variables"
-**A:** Make sure the `.env.test` file exists and contains all required environment variables.
-
-### Q: Performance tests are unstable
-**A:** Performance tests may be affected by system load, you can adjust the time thresholds in the tests.
-
-### Q: Jest ESM module issues
-**A:** Make sure the Jest configuration in `package.json` is correctly set up for ESM support.
-
 ## Best Practices
 
 1. **Test Isolation** - Each test should run independently
