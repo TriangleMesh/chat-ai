@@ -1,0 +1,19 @@
+{
+  "name": "chat-ai-app",
+  "version": "1.0.0",
+  "description": "Chat AI Application - Full-stack startup launcher",
+  "type": "module",
+  "scripts": {
+    "start": "node start.js",
+    "dev": "node dev.js",
+    "install:all": "npm run install:server && npm run install:client",
+    "install:server": "cd server && npm install",
+    "install:client": "cd client && npm install",
+    "test": "cd server && npm test",
+    "build": "cd client && npm run build",
+    "setup": "npm run install:all && echo '✅ Dependencies installed! Please configure server/.env file, then run npm start'"
+  },
+  "keywords": ["chat", "ai", "react", "express", "azure-openai"],
+  "author": "",
+  "license": "MIT"
+}
